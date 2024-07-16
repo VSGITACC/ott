@@ -1,0 +1,187 @@
+
+body {	  
+	font-family: "Poppins", sans-serif;
+	background-image:url('https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2018/08/3cf5e265.jpg');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	padding-top: 80px;
+	color: #fff;
+}
+	header{
+	background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-HXj8pHG9-CWKYnHW6osVzf9X2IZ7Ty3Zwg&s');
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+	height:80px;
+	display: flex;
+	align-items: center; 
+	justify-content: center-left;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index:999;
+}
+
+header a
+{
+	margin: 10px;
+	padding: 10px;
+	color: white;
+	text-decoration:none;
+	align-items: center;
+	
+
+}
+
+
+header b
+{
+padding: 15px;
+margin: 15px	
+}
+
+header d 
+{
+	
+	padding: 775px;
+	margin: 775 px;
+	display: flex;		
+	align-items: center; 
+justify-content: right;
+}
+
+.body-section{
+	padding: 30px;
+	margin: 0;
+	text-align: left;
+}
+.kop
+{display: flex;
+ 
+	 
+	}
+.marqueee { display: flex;
+align-items: flex-end;
+
+}
+.marqueee img	{
+	height:300px;
+	width:220px;
+		border:solid;
+		border-color:white;
+		border-width:10px;
+		justify-content:space;}
+.dropb {
+	background-color: #0ff0;
+	color: white;
+	font-size: 1rem;
+	position:fixed;
+	right:110px;
+	top:18px;
+	height: 40px;
+	padding: 0 15px;
+	border-radius: 5px;
+	background: royalblue;
+	border: 1px solid lightblue;
+  
+
+}
+.kkk{
+	position: absolute;
+	left:7%;
+	
+}
+.akon{ color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;}
+
+.body-section button{
+	border:none;
+	position:relative;
+	
+	background-image: linear-gradient(red, tomato);
+	height: 40px;
+	border-radius: 6px;
+	font:bold;
+	 font-family:  "Poppins", sans-serif;
+	font-size:1.2rem;
+	color:white;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	
+}
+.body-section button:hover{
+	background-image: linear-gradient(tomato, red);
+}
+
+.dropdwn {
+  position: relative;
+  display: inline-block;
+}
+.dropb{border:none;}
+.dcon{
+  display: none;
+  position: absolute;
+  background-color: #cc0000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    top: 18px;
+    left: 100%;
+}
+
+
+.dcon a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid white;
+}
+
+.dcon a:hover {
+	background-color: cyan;
+               padding: 12px 12px;}
+
+.dropdwn:hover .dcon {display: block;}
+
+.dropdwn:hover .dropb{background-color: red;}
+
+	
+				footer
+				{ text-align: center;
+				}
+				
+	.bp a:hover {background-color:red;
+	padding: 12px 12 px;
+	
+	}
+	
+	
+
+	
+.lk
+{
+	position:fixed;
+	right:50px;
+	top:18px;
+	
+}
+.h2 {
+	font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  
+}
+
+footer
+{
+display:flex;
+justify-content:center;
+border-top: 1px solid #ccc;
+justify-content: center;
+}
