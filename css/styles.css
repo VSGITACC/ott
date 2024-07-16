@@ -22,7 +22,7 @@ body {
 	height:80px;
 	display: flex;
 	align-items: center; 
-	justify-content: center-left;
+	justify-content: space-between;
 	position:fixed;
 	top: 0;
 	left: 0;
@@ -32,31 +32,25 @@ body {
 
 header a
 {
-	margin: 10px;
-	padding: 10px;
+	margin: 0 10px;
 	color: white;
-	text-decoration:none;
+	text-decoration:none;	
+
+}
+.header-left{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	padding-left: 20px;
+}
+.header-right{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
 	align-items: center;
-	
-
+	padding-right: 20px;
 }
 
-
-header b
-{
-padding: 15px;
-margin: 15px	
-}
-
-header d 
-{
-	
-	padding: 775px;
-	margin: 775 px;
-	display: flex;		
-	align-items: center; 
-justify-content: right;
-}
 
 .body-section{
 	padding: 30px;
@@ -79,21 +73,7 @@ align-items: flex-end;
 		border-color:white;
 		border-width:10px;
 		justify-content:space;}
-.dropb {
-	background-color: #0ff0;
-	color: white;
-	font-size: 1rem;
-	position:fixed;
-	right:110px;
-	top:18px;
-	height: 40px;
-	padding: 0 15px;
-	border-radius: 5px;
-	background: royalblue;
-	border: 1px solid lightblue;
-  
 
-}
 .kkk{
 	position: absolute;
 	left:7%;
@@ -126,9 +106,22 @@ align-items: flex-end;
 
 .dropdwn {
   position: relative;
-  display: inline-block;
+  height: 40px;
+  width: 120px;
 }
-.dropb{border:none;}
+.dropb{
+	border:none;	
+	background-color: #0ff0;
+	color: white;
+	font-size: 1rem;
+	height: 40px;
+	padding: 0 15px;
+	border-radius: 5px;
+	margin-right: 20px;
+	background: royalblue;
+	border: 1px solid lightblue;
+
+}
 .dcon{
   display: none;
   position: absolute;
@@ -136,8 +129,8 @@ align-items: flex-end;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-    top: 18px;
-    left: 100%;
+    top: 100%;
+    left: 0;
 }
 
 
@@ -150,7 +143,6 @@ align-items: flex-end;
 }
 
 .dcon a:hover {
-	background-color: cyan;
                padding: 12px 12px;}
 
 .dropdwn:hover .dcon {display: block;}
@@ -179,13 +171,6 @@ align-items: flex-end;
 	
 
 	
-.lk
-{
-	position:fixed;
-	right:50px;
-	top:18px;
-	
-}
 .h2 {
 	font-family: "Poppins", sans-serif;
   font-weight: 100;
