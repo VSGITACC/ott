@@ -1,50 +1,61 @@
-var slideIndex = 1;
-showDivs(slideIndex);
-var slidIndex = 1;
-showDiv(slidIndex);
-var sliIndex = 1;
-showDi(sliIndex);
+var slideIndex = 0;
+var slides = document.getElementsByClassName("mySlides");
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function plusDivs(n) {
-    showDiv(slidIndex += n);
-  }
-
-  function plusDivs(n) {
-    showDi(sliIndex += n);
-  }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
+// Function to start the slideshow
+function startSlideshow() {
+    // Hide all slides
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    // Increment slideIndex and display the corresponding slide
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1; }
+    slides[slideIndex - 1].style.display = "block";
+    // Change slide every 2 seconds (2000 milliseconds)
+    setTimeout(startSlideshow, 2000); 
 }
 
-function showDiv(n) {
-    var i;
-    var x = document.getElementsByClassName("mSlides");
-    if (n > x.length) {slidIndex = 1}
-    if (n < 1) {slidIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slidIndex-1].style.display = "block";  
-  }
+// Function to navigate to previous or next slide
+function plusDivs(n) {
+    showSlides(slideIndex += n);
+}
 
-  function showDi(n) {
-    var i;
-    var x = document.getElementsByClassName("mylides");
-    if (n > x.length) {sliIndex = 1}
-    if (n < 1) {sliIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
+// Function to display a specific slide
+function showSlides(n) {
+    if (n > slides.length) { slideIndex = 1; }    
+    if (n < 1) { slideIndex = slides.length; }
+    // Hide all slides
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
     }
-    x[sliIndex-1].style.display = "block";  
-  }
+    // Display the current slide
+    slides[slideIndex - 1].style.display = "block";  
+}
+
+// Initialize the slideshow
+showSlides(slideIndex);
+
+// Start the automatic slideshow
+startSlideshow();
+
+var currentIndex = 0;
+var images = document.querySelectorAll('.marquee-container img');
+
+function plusDivs(n) {
+    currentIndex += n;
+    showSlides();
+}
+
+function showSlides() {
+    var maxIndex = images.length - 1;
+
+    if (currentIndex > maxIndex) {
+        currentIndex = 0;
+    } else if (currentIndex < 0) {
+        currentIndex = maxIndex;
+    }
+
+    var offset = -currentIndex * (images[0].offsetWidth + 20); // Adjust 20 to match margin in CSS
+    document.querySelector('.marquee-container').style.transform = 'translateX(' + offset + 'px)';
+}
+

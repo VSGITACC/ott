@@ -8,9 +8,39 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<script src="english.js"></script>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
 		rel="stylesheet">
+
+		<style>
+			.w3-content {
+				max-width: 100%;
+				position: relative;
+			}
+			.mySlides {
+				display: none;
+			}
+			.mySlides img {
+				width: 220px;
+				height: 360px;
+			}
+			.w3-button {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 20px;
+				padding: 10px;
+				background-color: rgba(0, 0, 0, 0.5);
+				color: white;
+				border: none;
+				cursor: pointer;
+			}
+			.w3-button.w3-display-left {
+				left: 0;
+			}
+			.w3-button.w3-display-right {
+				right: 0;
+			}
+		</style>
 </head>
 <body>
 	<header>
@@ -53,53 +83,71 @@
 		<p> with UPI, credit and debit cards</p>
 		<h3> Enjoy World Cinema at just @99 a month </h3>
 	
-		<section class="bu">
 			<h4> COMEDIES </h4>
-			<div class="w3-content w3-display-container">
-				<div class="mySlides"> <img src="images/3.jpg" style="width:220px; height:300px;"/> <img src="images/2.jpg" style="width:220px; height:300px;"/> <img src="images/1.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/4.jpg" style="width:220px; height:300px;"/> <img src="images/5.jpg" style="width:220px; height:300px;"/> <img src="images/6.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/8.jpg" style="width:220px; height:300px;"/> <img src="images/9.jpg" style="width:220px; height:300px;"/> <img src="images/10.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/13.jpg" style="width:220px; height:300px;"/> <img src="images/12.jpg" style="width:220px; height:300px;"/> <img src="images/11.jpg" style="width:220px; height:300px;"/>  </div>
-				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			  </div>
-			  
 			
-
-			</div>
 			
-		</section>	
-		<section class="bu">
+			<section class="marke">
+				
+				<marquee behavior="scroll" direction="right" scrollamount="7" onmouseover=this.stop();
+					onmouseout=this.start();>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"><img src="images/1.jpg"
+							href="https://www.w3schools.com/cssref/pr_class_display.php" /> </a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/2.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/3.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/four.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/five.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/6.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/7.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/8.jpg" /></a>
+					<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/9.jpg" /></a>
+				</marquee>
+		
+					<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+				
+			</section>	
+			
+	
+	
+		<section class="marke">
 			<h4> ACTION </h4>
-			<div class="w3-content w3-display-container">
-				<div class="mySlides"> <img src="images/3.jpg" style="width:220px; height:300px;"/> <img src="images/2.jpg" style="width:220px; height:300px;"/> <img src="images/1.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/4.jpg" style="width:220px; height:300px;"/> <img src="images/5.jpg" style="width:220px; height:300px;"/> <img src="images/6.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/8.jpg" style="width:220px; height:300px;"/> <img src="images/9.jpg" style="width:220px; height:300px;"/> <img src="images/10.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/13.jpg" style="width:220px; height:300px;"/> <img src="images/12.jpg" style="width:220px; height:300px;"/> <img src="images/11.jpg" style="width:220px; height:300px;"/>  </div>
+			<marquee behavior="scroll" direction="right" scrollamount="7" onmouseover=this.stop();
+				onmouseout=this.start();>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"><img src="images/1.jpg"
+						href="https://www.w3schools.com/cssref/pr_class_display.php" /> </a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/2.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/3.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/four.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/five.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/6.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/7.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/8.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/9.jpg" /></a>
+			</marquee>
+	
 				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			  </div>
-			  
-			
-
-			</div>
 			
 		</section>	
-		<section class="bu">
-			<h4> DRAMA </h4>
-			<div class="w3-content w3-display-container">
-				<div class="mySlides"> <img src="images/3.jpg" style="width:220px; height:300px;"/> <img src="images/2.jpg" style="width:220px; height:300px;"/> <img src="images/1.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/4.jpg" style="width:220px; height:300px;"/> <img src="images/5.jpg" style="width:220px; height:300px;"/> <img src="images/6.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/8.jpg" style="width:220px; height:300px;"/> <img src="images/9.jpg" style="width:220px; height:300px;"/> <img src="images/10.jpg" style="width:220px; height:300px;"/>  </div>
-				<div class="mySlides"> <img src="images/13.jpg" style="width:220px; height:300px;"/> <img src="images/12.jpg" style="width:220px; height:300px;"/> <img src="images/11.jpg" style="width:220px; height:300px;"/>  </div>
-				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-			  </div>
-			  
-			
 
-			</div>
-			
+		<section class="marke">
+			<h4>DRAMA</h4>
+			<marquee id="maa" behavior="scroll" direction="right" scrollamount="7" onmouseover=this.stop();
+				onmouseout=this.start();>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"><img src="images/1.jpg"
+						href="https://www.w3schools.com/cssref/pr_class_display.php" /> </a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/2.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/3.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/four.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/five.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/6.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/7.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/8.jpg" /></a>
+				<a href="https://www.w3schools.com/cssref/pr_class_display.php"> <img src="images/9.jpg" /></a>
+			</marquee>
+				<button onclick="document.getElementById('marquee').scrollamount= 30" ><</button>
+				<button onclick="document.getElementById('marquee').scrollamount= 30" >></button>
+		
 		</section>	
 		</section>
 
