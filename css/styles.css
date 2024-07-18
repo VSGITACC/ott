@@ -110,9 +110,30 @@ align-items: flex-end;
 	cursor: pointer;
 	
 }
+
+.bu button{
+	border:none;
+	position:relative;
+	
+	background-image: linear-gradient(white, blue);
+	height: 40px;
+	border-radius: 6px;
+	font:bold;
+	 font-family:  "Poppins", sans-serif;
+	font-size:1.2rem;
+	color:white;
+	padding-left: 15px;
+	padding-right: 15px;
+	cursor: pointer;
+	
+}
 .body-section button:hover{
 	background-image: linear-gradient(tomato, red);
 }
+.bu button:hover{
+	background-image: linear-gradient(blue, white);
+}
+
 
 .dropdwn {
   position: relative;
@@ -188,6 +209,15 @@ align-items: flex-end;
   
 }
 
+
+.h1 {
+	font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color:white;
+}
+
+
 footer
 {
 display:flex;
@@ -195,4 +225,21 @@ justify-content:center;
 border-top: 1px solid #ccc;
 justify-content: center;
 background:none;
+}
+
+
+.divplab
+{
+
+	justify-content: space-around;
+}
+
+
+.plan 
+{
+
+color: white;
+justify-content: space-around;
+justify-content: space-between;
+
 }
