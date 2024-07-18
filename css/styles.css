@@ -115,7 +115,7 @@ align-items: flex-end;
 	border:none;
 	position:relative;
 	
-	background-image: linear-gradient(white, blue);
+	background-image: linear-gradient(red, red);
 	height: 40px;
 	border-radius: 6px;
 	font:bold;
@@ -127,12 +127,15 @@ align-items: flex-end;
 	cursor: pointer;
 	
 }
+.bu button:hover{
+	background-image: linear-gradient(red, blue);
+}
+
+
 .body-section button:hover{
 	background-image: linear-gradient(tomato, red);
 }
-.bu button:hover{
-	background-image: linear-gradient(blue, white);
-}
+
 
 
 .dropdwn {
